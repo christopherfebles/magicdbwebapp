@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+.countDisplayInput {
+    width: 20px;
+    text-align: center;
+}
+
+.countWidgetTable {
+    float: right;
+    /* padding-right: 20px; */
+}
+
+.countButton {
+    box-sizing: border-box;
+    width: 45px;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+}

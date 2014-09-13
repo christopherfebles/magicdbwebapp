@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+/* Navigation */
+.previous {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+/* Make text appear like a link */
+.pseudoLink {
+    /* See: http://stackoverflow.com/questions/1367409/how-to-make-button-look-like-a-link */
+    /* Remove all decorations to look like normal text */
+    background: none;
+    border: none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    outline-offset: 0;
+    /* Additional styles to look like a link */
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Arrows */
+.arrow-down {
+    width: 0; 
+    height: 0;
+    display: inline-block; 
+    
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+    
+    cursor: pointer;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0;
+    display: inline-block; 
+    
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    
+    cursor: pointer;
+}

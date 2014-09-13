@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+/* Combobox */
+.combobox-list {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+    overflow-y: scroll;
+    height: 200px;
+    width: 15%;
+    border: 1px solid black;
+    position: absolute;
+    background-color: white;
+}
+
+.combobox-span {
+    display: inline;
+}
+
+.combobox-listItem {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+}
+
+.combobox-list li:hover {
+    background-color: lightblue;
+}

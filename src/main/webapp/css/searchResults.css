@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+/* Search Results Page */
+.searchResults {
+    text-align: center; 
+    display: inline-block; 
+    width: 100%;
+}

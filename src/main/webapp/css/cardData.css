@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.manaImg {
+    width: 20px;
+    height: 20px;
+}
+
+.topRow {
+    padding-top: 0;
+}

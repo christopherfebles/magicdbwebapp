@@ -1,0 +1,37 @@
+<configuration debug="false">
+
+    <variable name="COMMON_PATTERN"
+        value="%d{HH:mm:ss.SSS} %-5level %class.%method\\(\\) line %line: %msg %n" />
+
+    <!-- Log Console messages to console -->
+    <appender name="RootConsole" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${COMMON_PATTERN}</pattern>
+        </encoder>
+    </appender>
+    
+    <!-- Log Console messages to a file -->
+    <appender name="RootFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${catalina.base}/logs/Magic/MagicDBWebApp_console.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>
+                ${catalina.base}/logs/Magic/MagicDBWebApp_console.%d{yyyy-MM-dd}.log
+            </fileNamePattern>
+            <maxHistory>3</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>${COMMON_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework" level="INFO" additivity="false">
+        <appender-ref ref="RootConsole" />
+        <appender-ref ref="RootFile" />
+    </logger>
+    
+    <root level="DEBUG">
+        <appender-ref ref="RootConsole" />
+        <appender-ref ref="RootFile" />
+    </root>
+</configuration> 

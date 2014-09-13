@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+/* Display Card */
+.pageControlsDiv {
+    text-align: center;
+}
+
+.helperText {
+    font-style: italic; 
+    font-size: small;
+}
+
+.cardImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.displayCardTable {
+    box-sizing: border-box;
+    width: 400px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.displayCardTable td {
+    padding-top: 10px;
+}
+
+.displayCardTable th {
+    padding-top: 10px;
+    text-align: right;
+    vertical-align: top;
+    width: 25%;
+}
+
+.displayCardImage {
+    border-bottom: 1px solid black;
+} 
+
+.displayCardData {
+    border: 0 solid black;
+}
+
+.displayCardData table {
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+/* Search Page */
+.searchForm {
+    border: 1px solid black;
+}
+
+.searchElementsTable  {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchElementsTable td {
+    padding: 5px;
+}
